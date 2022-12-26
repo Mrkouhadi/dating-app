@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+* some Tailwindcss Reusable components that will help us write less classes
+*/
+@layer components {
+  .btn-primary {
+    @apply shadow-lg bg-primary px-4 py-2 text-gray-200 rounded border-none;
+  }
+  .btn-secondary {
+    @apply shadow-lg bg-secondary px-4 py-2 text-gray-200 rounded border-none;
+  }
+  .btn-accent {
+    @apply shadow-lg bg-accent hover:bg-secondary transition-all duration-300 px-4 py-2 text-sm text-gray-200 rounded border-none;
+  }
+  .bg-gradient {
+    @apply bg-gradient-to-r from-pink-500 to-purple-500;
+  }
+}
+/* 
+* Base styles helps avoid any weird behavior that might hapen
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+/* Hide scrollbar from all elements */
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/*  circles */
+.loader-cirle {
+  border: 16px solid #356c91;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  position: relative;
+}
+.loader-cirle-one {
+  border-top: 16px solid #f856a6;
+}
+.loader-cirle-two {
+  border-top: 16px solid #f856a6;
+  border-right: 16px solid #f856a6;
+}
+.loader-cirle-three {
+  border: 16px solid #f856a6;
+  transition: all 300ms linear;
+}
+
+/* Loading animation for the custom loading page */
+
+.loading {
+  background-color: rgb(88, 60, 65);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+.loading-1 {
+  animation: bounce 1s infinite;
+}
+.loading-2 {
+  animation: bounce 1s infinite 200ms;
+}
+.loading-3 {
+  animation: bounce 1s infinite 400ms;
+}
+.loading-4 {
+  animation: bounce 1s infinite 600ms;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0, 0, 0);
+  }
+
+  50% {
+    transform: translateY(-200px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 0, 0.3);
+  }
+
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0, 0, 0);
+  }
+}
