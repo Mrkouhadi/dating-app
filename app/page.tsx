@@ -11,16 +11,10 @@ import Features from '../components/home/Features'
 import DateAdviceSection from '../components/home/DateAdviceSection'
 import "../styles/globals.css"
 import HomeFooter from '../components/home/HomeFooter'
-
-// // fonts
-// import { Inter } from '@next/font/google';
-// const inter = Inter({
-//     variable: '--font-inter',
-//   });
-
+import { ArrowUpCircleIcon } from "@heroicons/react/24/outline"
 
 const HomePage = () => {
-    const isLoggedIn = true;
+    const isLoggedIn = false;
     const router = useRouter();
 
     useEffect(()=>{
@@ -28,7 +22,7 @@ const HomePage = () => {
       if(isLoggedIn) router.push("/matches");
     })
   return (
-      <main>
+      <main className=''>
           <Image src={homeImg} alt="dating app home page" className="absolute top-0 left-0 w-screen h-screen -z-20" />
           <div className='py-8 px-2 sm:px-8 lg:px-32 mb-12 min-h-[75vh]'>
               <h1 className='font-extrabold text-4xl text-center text-gray-100 w-[350px] mb-4'>Find Real Love in Real Time at a Click</h1>
@@ -60,6 +54,12 @@ const HomePage = () => {
            </div>
            <Features/>
            <DateAdviceSection />
+           {/* scroll to the top button */}
+           {
+              /* <button onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })} className="absolute right-8 bottom-4 bg-blue-400 rounded-full w-10 h-10 flex justify-center items-center">
+                   <ArrowUpCircleIcon className="w-6 h-6 text-gray-900"/>
+                 </button> */
+            }
            <HomeFooter />
        </main>
   )
