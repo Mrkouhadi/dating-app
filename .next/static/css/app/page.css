@@ -559,6 +559,12 @@ video {
 .right-32 {
   right: 8rem;
 }
+.right-8 {
+  right: 2rem;
+}
+.bottom-4 {
+  bottom: 1rem;
+}
 .right-0 {
   right: 0px;
 }
@@ -577,9 +583,6 @@ video {
 .top-12 {
   top: 3rem;
 }
-.right-8 {
-  right: 2rem;
-}
 .-bottom-3 {
   bottom: -0.75rem;
 }
@@ -597,21 +600,6 @@ video {
 }
 .bottom-0 {
   bottom: 0px;
-}
-.bottom-8 {
-  bottom: 2rem;
-}
-.bottom-16 {
-  bottom: 4rem;
-}
-.bottom-24 {
-  bottom: 6rem;
-}
-.bottom-64 {
-  bottom: 16rem;
-}
-.bottom-4 {
-  bottom: 1rem;
 }
 .-z-20 {
   z-index: -20;
@@ -705,6 +693,9 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-5 {
   height: 1.25rem;
 }
@@ -713,9 +704,6 @@ video {
 }
 .h-20 {
   height: 5rem;
-}
-.h-10 {
-  height: 2.5rem;
 }
 .h-0 {
   height: 0px;
@@ -771,14 +759,14 @@ video {
 .w-6 {
   width: 1.5rem;
 }
+.w-10 {
+  width: 2.5rem;
+}
 .w-5 {
   width: 1.25rem;
 }
 .w-full {
   width: 100%;
-}
-.w-10 {
-  width: 2.5rem;
 }
 .w-8 {
   width: 2rem;
@@ -1026,10 +1014,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
 .p-4 {
   padding: 1rem;
 }
@@ -1158,6 +1142,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(52 60 79 / var(--tw-text-opacity));
 }
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(107 129 249 / var(--tw-text-opacity));
@@ -1177,10 +1165,6 @@ video {
 .text-gray-600\/50 {
   color: rgb(75 85 99 / 0.5);
 }
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
 .text-accent {
   --tw-text-opacity: 1;
   color: rgb(76 194 239 / var(--tw-text-opacity));
@@ -1192,14 +1176,6 @@ video {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .opacity-0 {
   opacity: 0;

@@ -11,7 +11,7 @@ import Features from '../components/home/Features'
 import DateAdviceSection from '../components/home/DateAdviceSection'
 import "../styles/globals.css"
 import HomeFooter from '../components/home/HomeFooter'
-import { ArrowUpCircleIcon } from "@heroicons/react/24/outline"
+import { ArrowUpIcon } from "@heroicons/react/24/outline"
 
 const HomePage = () => {
     const isLoggedIn = false;
@@ -21,6 +21,7 @@ const HomePage = () => {
       // we need to route the user straight to /matches if she/he is logged in
       if(isLoggedIn) router.push("/matches");
     })
+
   return (
       <main className=''>
           <Image src={homeImg} alt="dating app home page" className="absolute top-0 left-0 w-screen h-screen -z-20" />
@@ -54,13 +55,11 @@ const HomePage = () => {
            </div>
            <Features/>
            <DateAdviceSection />
-           {/* scroll to the top button */}
-           {
-              /* <button onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })} className="absolute right-8 bottom-4 bg-blue-400 rounded-full w-10 h-10 flex justify-center items-center">
-                   <ArrowUpCircleIcon className="w-6 h-6 text-gray-900"/>
-                 </button> */
-            }
            <HomeFooter />
+        {/* scroll to the top button */}
+         <button onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed right-8 bottom-4 bg-gray-200 rounded-full w-10 h-10 flex justify-center items-center overflow-hidden">
+                   <ArrowUpIcon className="w-5 h-5 text-gray-600 animate-pulse "/>
+         </button> 
        </main>
   )
 }

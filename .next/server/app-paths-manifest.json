@@ -1,4 +1,8 @@
 {
+  "/matches/page": "app/matches/page.js",
   "/page": "app/page.js",
-  "/matches/page": "app/matches/page.js"
+  "/dates/page": "app/dates/page.js",
+  "/messages/page": "app/messages/page.js",
+  "/account/page": "app/account/page.js",
+  "/discovery/page": "app/discovery/page.js"
 }
