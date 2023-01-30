@@ -2,6 +2,15 @@
 
 - A dating web app. The client side built in Nextjs , Typescript , Tailwindcss.
 
+# Screenshots
+
+<div align="center">
+    <img src="/screenshots/1.png" width="650" title="dating app"> </br>
+    <img src="/screenshots/2.png" width="650" alt="dating app" title="dating app">
+    <img src="/screenshots/3.png" width="300" title="dating app"> </br>
+    <img src="/screenshots/4.png" width="500" title="dating app">
+</div>
+
 ## Getting Started
 
 - To run the development server:
@@ -17,12 +26,3 @@ npm run build
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-# Screenshots
-
-<div align="center">
-    <img src="/screenshots/1.png" width="650" title="dating app"> </br>
-    <img src="/screenshots/2.png" width="650" alt="dating app" title="dating app">
-    <img src="/screenshots/3.png" width="300" title="dating app"> 
-    <img src="/screenshots/4.png" width="500" title="dating app">
-</div>
