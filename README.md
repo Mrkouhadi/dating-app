@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Screenshots
 
-<p align="center">
-  <img src="/screenshots/1.png" width="350" title="hover text">
-  <img src=src="/screenshots/2.png" width="350" alt="accessibility text">
-</p>
+<div align="center">
+  <img src="/screenshots/1.png" width="650" title="dating app"> </br>
+  <img src=src="/screenshots/2.png" width="650" alt="dating app" title="dating app">
+</div>
